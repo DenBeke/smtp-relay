@@ -1,0 +1,15 @@
+version: "3"
+services:
+  smtprelay:
+    container_name: smtprelay
+    image: denbeke/smtprelay
+    # build: .
+    ports:
+      - "25:25"
+    environment:
+      - REMOTE_SMTP_HOST=${REMOTE_SMTP_HOST}
+      - REMOTE_SMTP_PORT=${REMOTE_SMTP_PORT}
+      - REMOTE_SMTP_DISABLE_TLS=${REMOTE_SMTP_DISABLE_TLS}
+      - REMOTE_SMTP_USER=${REMOTE_SMTP_USER}
+      - REMOTE_SMTP_PASSWORD=${REMOTE_SMTP_PASSWORD}
+    restart: unless-stopped
