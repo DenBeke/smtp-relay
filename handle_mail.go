@@ -65,7 +65,7 @@ func (r *SMTPRelay) handleMail(s *smtp.State) error {
 
 	err := gosmtp.SendMail(remoteSMTPAddress, auth, from, to, reader)
 	if err != nil {
-		log.Errorln("couldn't send email: %v", err)
+		log.Errorf("couldn't send email: %v", err)
 		return fmt.Errorf("couldn't send email: %v", err)
 	}
 
