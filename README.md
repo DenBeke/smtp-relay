@@ -4,8 +4,8 @@ SMTP Relay is a very simple SMTP server that will relay all incoming emails to a
 I use as a single entrypoint to relay all mails from my Docker containers to Mailgun.
 
 [![Build Status](https://app.travis-ci.com/DenBeke/smtp-relay.svg?branch=master)](https://app.travis-ci.com/DenBeke/smtp-relay)
-[![Go Report Card](https://goreportcard.com/badge/github.com/DenBeke/smtprelay)](https://goreportcard.com/report/github.com/DenBeke/smtp-relay)
-[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/denbeke/smtprelay?sort=date)](https://hub.docker.com/r/denbeke/smtp-relay)
+[![Go Report Card](https://goreportcard.com/badge/github.com/DenBeke/smtp-relay)](https://goreportcard.com/report/github.com/DenBeke/smtp-relay)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/denbeke/smtp-relay?sort=date)](https://hub.docker.com/r/denbeke/smtp-relay)
 
 
 ## Usage (Docker)
